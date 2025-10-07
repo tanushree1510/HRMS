@@ -1,0 +1,42 @@
+BRANDON HALL
+Mobile App Developer (iOS)
+brandon.hall@email.com | (555) 901-5678
+
+SUMMARY
+Experienced iOS Developer with 6 years building native mobile applications. Expert in Swift, SwiftUI, UIKit, and iOS SDK. Published 8 apps on the App Store.
+
+TECHNICAL SKILLS
+Languages: Swift, Objective-C, JavaScript
+iOS Development: SwiftUI, UIKit, Core Data, CoreAnimation, Auto Layout
+Tools: Xcode, CocoaPods, Instruments, TestFlight
+APIs: REST, GraphQL, Firebase
+Version Control: Git, GitHub
+
+EXPERIENCE
+
+Senior iOS Developer | MobileFirst | Austin, TX | 2019 - Present
+- Develop and maintain 5 iOS applications
+- Implement features using SwiftUI and UIKit
+- Integrate REST APIs and third-party SDKs
+- Optimize app performance and memory usage
+- Publish apps to App Store
+- Mentor junior iOS developers
+
+iOS Developer | AppStudio | Dallas, TX | 2018 - 2019
+- Built iOS apps for clients using Swift
+- Worked with Core Data for local storage
+- Integrated push notifications
+- Submitted apps for App Store approval
+
+Junior iOS Developer | iOSDev Inc. | Houston, TX | 2017 - 2018
+- Learned iOS development with Swift
+- Built UI screens with UIKit
+- Fixed bugs and added features
+
+EDUCATION
+B.S. Computer Science | UT Austin | 2013 - 2017
+
+PUBLISHED APPS
+- Fitness Tracker App (50K+ downloads)
+- Recipe Manager App (25K+ downloads)
+- Budget Planning App (15K+ downloads)

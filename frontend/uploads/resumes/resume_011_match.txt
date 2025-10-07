@@ -1,0 +1,60 @@
+RACHEL PARK
+Software Engineer - Full Stack
+rachel.park@email.com | (555) 123-7890 | Portfolio: rachelpark.dev
+
+PROFILE
+Motivated Full Stack Software Engineer with 5+ years developing scalable web applications. Proficient in modern JavaScript frameworks, Python, cloud platforms, and DevOps tools. Passionate about clean code and continuous learning.
+
+TECHNICAL SKILLS
+Languages: JavaScript, TypeScript, Python, HTML, CSS, SQL
+Frontend: React, Redux, Next.js, Tailwind CSS, Styled Components
+Backend: Node.js, Express.js, FastAPI, Flask
+Databases: PostgreSQL, MongoDB, Redis, MySQL
+Cloud & Infrastructure: AWS (EC2, S3, Lambda, RDS, CloudFormation), Docker, Kubernetes
+CI/CD: GitHub Actions, Jenkins, GitLab CI
+Testing: Jest, Pytest, Cypress, Testing Library
+Tools: Git, VS Code, Postman, JIRA, Slack
+Practices: Agile, Scrum, Test-Driven Development, Code Reviews
+
+WORK EXPERIENCE
+
+Software Engineer | DevOps Masters | San Francisco, CA | 2020 - Present
+- Design and build full-stack features using React, TypeScript, Node.js, and PostgreSQL
+- Develop microservices with FastAPI and deploy on AWS
+- Implement comprehensive testing strategies with Jest, Pytest, and Cypress
+- Create CI/CD pipelines using GitHub Actions and Jenkins
+- Optimize application performance and database queries
+- Collaborate with cross-functional teams in Agile environment
+- Mentor junior developers through pair programming
+
+Full Stack Developer | AppCrafters | Oakland, CA | 2019 - 2020
+- Built responsive web apps with React, Redux, and Express.js
+- Integrated MongoDB and Redis for data persistence and caching
+- Deployed applications to AWS using Docker containers
+- Participated in code reviews and technical discussions
+
+Junior Software Developer | TechStart | San Jose, CA | 2018 - 2019
+- Developed web features using JavaScript, Python, and Node.js
+- Worked with PostgreSQL database and SQL queries
+- Learned React and modern frontend development
+- Contributed to team projects in Agile sprints
+
+EDUCATION
+Bachelor of Science in Software Engineering
+San Jose State University | 2014 - 2018
+
+PROJECTS
+
+Video Streaming Platform | React, Node.js, PostgreSQL, AWS, Docker
+- Built video streaming service with user authentication
+- Implemented video transcoding and CDN integration
+- Scaled to serve 25K users with AWS infrastructure
+
+Task Automation Tool | React, FastAPI, MongoDB, Kubernetes
+- Created automation tool for business workflows
+- Implemented REST APIs and background job processing
+- Deployed using Kubernetes on AWS EKS
+
+CERTIFICATIONS
+- AWS Certified Developer - Associate
+- React Developer Certification

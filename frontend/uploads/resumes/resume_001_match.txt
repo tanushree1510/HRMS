@@ -1,0 +1,58 @@
+JOHN ANDERSON
+Senior Full Stack Developer
+Email: john.anderson@email.com | Phone: (555) 123-4567 | LinkedIn: linkedin.com/in/johnanderson
+GitHub: github.com/johnanderson
+
+PROFESSIONAL SUMMARY
+Highly skilled Senior Software Engineer with 7+ years of experience in full-stack web development. Expertise in JavaScript, TypeScript, Python, React, Node.js, and cloud technologies. Proven track record of building scalable applications and leading development teams.
+
+TECHNICAL SKILLS
+Languages: JavaScript, TypeScript, Python, SQL
+Frontend: React, Redux, Next.js, Vue.js, HTML5, CSS3, Tailwind CSS
+Backend: Node.js, Express.js, FastAPI, Django, REST APIs
+Databases: PostgreSQL, MongoDB, Redis, MySQL
+Cloud & DevOps: AWS (EC2, S3, Lambda, RDS), Docker, Kubernetes, Jenkins, CI/CD
+Testing: Jest, Pytest, Cypress, React Testing Library, Mocha
+Tools: Git, GitHub, JIRA, Agile/Scrum
+
+PROFESSIONAL EXPERIENCE
+
+Senior Software Engineer | CloudTech Inc. | San Francisco, CA | 2020 - Present
+- Led development of microservices architecture using Node.js and FastAPI, improving system scalability by 60%
+- Architected and implemented full-stack features using React, TypeScript, and PostgreSQL
+- Mentored team of 5 junior developers, conducting code reviews and technical training sessions
+- Implemented CI/CD pipelines using Jenkins and GitHub Actions, reducing deployment time by 40%
+- Optimized database queries and API performance, achieving 50% faster response times
+- Collaborated with product managers and designers in Agile sprints
+
+Full Stack Developer | WebSolutions Ltd. | San Jose, CA | 2018 - 2020
+- Developed responsive web applications using React, Node.js, and MongoDB
+- Built RESTful APIs and integrated third-party services
+- Implemented automated testing with Jest and Cypress, achieving 85% code coverage
+- Deployed applications on AWS using Docker containers
+- Participated in system design discussions and technical planning
+
+Software Developer | StartupXYZ | Remote | 2017 - 2018
+- Created full-stack features using JavaScript, Python, and Express.js
+- Worked with PostgreSQL and Redis for data storage and caching
+- Implemented authentication and authorization systems
+- Contributed to open-source projects and internal tooling
+
+EDUCATION
+Bachelor of Science in Computer Science
+University of California, Berkeley | 2013 - 2017
+
+CERTIFICATIONS
+- AWS Certified Solutions Architect - Associate
+- MongoDB Certified Developer
+
+PROJECTS
+E-Commerce Platform | React, Node.js, PostgreSQL, AWS
+- Built scalable e-commerce platform handling 10K+ daily users
+- Implemented payment integration with Stripe API
+- Deployed using Docker and Kubernetes on AWS
+
+Real-Time Analytics Dashboard | React, FastAPI, Redis, WebSockets
+- Created real-time data visualization dashboard
+- Optimized for performance with Redis caching
+- Implemented WebSocket connections for live updates

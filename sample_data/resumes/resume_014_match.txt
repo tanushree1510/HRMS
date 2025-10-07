@@ -1,0 +1,72 @@
+DANIEL FOSTER
+Full Stack Software Developer
+daniel.foster@email.com | (555) 456-0123 | github.com/danielfoster
+
+PROFESSIONAL SUMMARY
+Dedicated Full Stack Developer with 5 years of experience creating web applications using React, Node.js, TypeScript, and Python. Strong background in AWS cloud services, containerization, and automated testing.
+
+CORE TECHNICAL SKILLS
+Languages: JavaScript, TypeScript, Python, HTML5, CSS3, SQL
+Frontend: React, Redux, Next.js, Tailwind CSS, Material-UI, Responsive Design
+Backend: Node.js, Express.js, FastAPI, Flask, RESTful APIs
+Databases: PostgreSQL, MongoDB, Redis, SQLite
+Cloud: AWS (EC2, S3, Lambda, RDS, Elastic Beanstalk), Firebase
+DevOps: Docker, Kubernetes, GitHub Actions, Jenkins, CI/CD Pipelines
+Testing: Jest, Pytest, Cypress, React Testing Library, Mocha
+Tools: Git, GitHub, VS Code, Postman, npm, pip
+Methodologies: Agile, Scrum, Code Reviews, Pair Programming
+
+PROFESSIONAL EXPERIENCE
+
+Full Stack Developer | TechWave Solutions | Denver, CO | 2021 - Present
+- Build modern web applications using React, TypeScript, and Node.js
+- Develop RESTful APIs with Express.js and FastAPI
+- Design database schemas and optimize queries in PostgreSQL
+- Implement Redis caching to improve application performance
+- Deploy applications to AWS using Docker containers
+- Write comprehensive tests with Jest, Pytest, and Cypress
+- Participate in Agile ceremonies and sprint planning
+- Conduct code reviews and provide technical mentorship
+
+Software Developer | InnovateTech | Boulder, CO | 2019 - 2021
+- Created full-stack features using React, Redux, and MongoDB
+- Built backend services with Node.js and Express.js
+- Integrated third-party APIs and webhooks
+- Implemented JWT-based authentication systems
+- Deployed applications to AWS EC2 instances
+- Collaborated in cross-functional Agile teams
+
+Junior Developer | CodeLab | Fort Collins, CO | 2018 - 2019
+- Developed web applications using JavaScript and Python
+- Worked with PostgreSQL databases and SQL
+- Learned React and modern JavaScript frameworks
+- Contributed to team projects using Git
+
+EDUCATION
+Bachelor of Science in Computer Science
+Colorado State University | 2014 - 2018
+Dean's List (6 semesters)
+
+PROJECTS
+
+Inventory Management System | React, Node.js, PostgreSQL, Docker, AWS
+- Full-stack inventory tracking application for small businesses
+- Implemented barcode scanning and real-time updates
+- Deployed using Docker on AWS ECS with load balancer
+- Achieved 99.9% uptime over 12 months
+
+Recipe Sharing Platform | React, FastAPI, MongoDB, AWS Lambda
+- Built social platform for sharing and discovering recipes
+- Implemented image upload to AWS S3
+- Used MongoDB for flexible recipe data storage
+- Serverless architecture with AWS Lambda functions
+
+CERTIFICATIONS & TRAINING
+- AWS Certified Developer - Associate (2023)
+- Full Stack Web Development Bootcamp (2018)
+- Certified Scrum Developer (2022)
+
+OPEN SOURCE CONTRIBUTIONS
+- Contributor to React ecosystem libraries
+- Maintained npm package with 1K+ weekly downloads
+- Active participant in developer community forums

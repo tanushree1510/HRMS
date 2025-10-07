@@ -1,0 +1,66 @@
+Senior Software Engineer - Full Stack Development
+
+Company: TechCorp Solutions
+Location: San Francisco, CA (Hybrid)
+Type: Full-Time
+
+About the Role:
+We are seeking an experienced Senior Software Engineer to join our dynamic engineering team. The ideal candidate will have strong expertise in both frontend and backend development, with a passion for building scalable, high-performance web applications.
+
+Key Responsibilities:
+- Design, develop, and maintain full-stack web applications using modern technologies
+- Write clean, maintainable, and efficient code following best practices
+- Collaborate with cross-functional teams including product managers, designers, and other engineers
+- Participate in code reviews and provide constructive feedback
+- Mentor junior developers and contribute to team growth
+- Implement robust testing strategies including unit, integration, and end-to-end tests
+- Optimize application performance and scalability
+- Stay current with emerging technologies and industry trends
+
+Required Skills and Qualifications:
+- Bachelor's degree in Computer Science, Engineering, or related field (or equivalent experience)
+- 5+ years of professional software development experience
+- Strong proficiency in JavaScript/TypeScript and Python
+- Extensive experience with React, Node.js, and Express.js
+- Solid understanding of RESTful APIs and microservices architecture
+- Proficiency with SQL and NoSQL databases (PostgreSQL, MongoDB)
+- Experience with cloud platforms (AWS, Azure, or Google Cloud)
+- Familiarity with Docker and containerization
+- Strong understanding of Git and version control workflows
+- Experience with Agile/Scrum methodologies
+- Excellent problem-solving and debugging skills
+- Strong communication and collaboration abilities
+
+Preferred Qualifications:
+- Experience with FastAPI or similar Python web frameworks
+- Knowledge of CI/CD pipelines and DevOps practices
+- Familiarity with Kubernetes and orchestration tools
+- Experience with testing frameworks (Jest, Pytest, Cypress)
+- Contributions to open-source projects
+- Experience with system design and architecture
+- Knowledge of security best practices and OWASP guidelines
+
+Technical Stack:
+- Frontend: React, TypeScript, Redux, Tailwind CSS
+- Backend: Node.js, Python, FastAPI, Express.js
+- Database: PostgreSQL, MongoDB, Redis
+- Cloud: AWS (EC2, S3, Lambda, RDS)
+- DevOps: Docker, Kubernetes, Jenkins, GitHub Actions
+- Testing: Jest, Pytest, Cypress, React Testing Library
+
+What We Offer:
+- Competitive salary range: $130,000 - $180,000
+- Comprehensive health, dental, and vision insurance
+- 401(k) with company match
+- Flexible work arrangements (hybrid model)
+- Professional development budget
+- Collaborative and innovative work environment
+- Opportunity to work on cutting-edge technologies
+
+Company Culture:
+TechCorp Solutions is committed to fostering an inclusive, diverse, and collaborative workplace. We value innovation, continuous learning, and work-life balance. Our engineering team follows modern development practices and encourages experimentation with new technologies.
+
+How to Apply:
+Please submit your resume, cover letter, and links to your GitHub profile or portfolio. We review applications on a rolling basis and will contact qualified candidates for interviews.
+
+TechCorp Solutions is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.

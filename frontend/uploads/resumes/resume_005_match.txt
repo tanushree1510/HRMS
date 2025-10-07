@@ -1,0 +1,59 @@
+DAVID KUMAR
+Full Stack Software Engineer
+david.kumar@email.com | (555) 567-8901 | github.com/davidkumar
+
+OBJECTIVE
+Experienced Full Stack Developer with strong expertise in JavaScript, TypeScript, React, Node.js, and Python. Seeking challenging role to leverage 6+ years of experience building scalable web applications.
+
+TECHNICAL SKILLS
+Programming Languages: JavaScript, TypeScript, Python, SQL
+Frontend: React, Redux, Next.js, Tailwind CSS, Bootstrap
+Backend: Node.js, Express.js, FastAPI, Flask
+Databases: PostgreSQL, MongoDB, Redis, MySQL
+Cloud: AWS (EC2, S3, Lambda, RDS), Google Cloud
+DevOps: Docker, Kubernetes, CI/CD, Jenkins, GitHub Actions
+Testing: Jest, Pytest, Cypress, Mocha, Chai
+Tools: Git, JIRA, Agile/Scrum
+
+PROFESSIONAL EXPERIENCE
+
+Software Engineer | TechFlow Systems | Seattle, WA | 2021 - Present
+- Develop full-stack applications using React, TypeScript, Node.js, and PostgreSQL
+- Build and maintain RESTful APIs and microservices with FastAPI
+- Implement automated testing with Jest, Pytest, and Cypress
+- Deploy applications using Docker and AWS services
+- Collaborate in Agile environment with daily standups
+- Conduct code reviews and mentor junior developers
+
+Full Stack Developer | AppBuilder Inc. | Portland, OR | 2019 - 2021
+- Created responsive web applications with React and Express.js
+- Integrated MongoDB and Redis for data management
+- Implemented authentication and authorization systems
+- Optimized application performance and database queries
+- Participated in system design discussions
+
+Junior Developer | CodeWorks | Remote | 2018 - 2019
+- Built web features using JavaScript, Python, and Node.js
+- Worked with SQL databases and ORMs
+- Contributed to frontend development with React
+- Participated in Agile ceremonies
+
+EDUCATION
+Bachelor of Science in Computer Science
+University of Washington | 2014 - 2018
+GPA: 3.7/4.0
+
+PROJECTS
+Project Management Tool | React, Node.js, PostgreSQL, AWS
+- Built full-stack project management application
+- Implemented real-time collaboration features
+- Deployed with Docker on AWS ECS
+
+E-Learning Platform | React, FastAPI, MongoDB, Redis
+- Developed online learning platform with video streaming
+- Implemented caching for improved performance
+- Integrated payment processing with Stripe
+
+CERTIFICATIONS
+- AWS Certified Developer - Associate
+- MongoDB Certified Developer

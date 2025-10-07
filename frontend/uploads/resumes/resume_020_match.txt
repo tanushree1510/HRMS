@@ -1,0 +1,88 @@
+MATTHEW GONZALEZ
+Senior Full Stack Software Engineer
+matthew.gonzalez@email.com | (555) 012-6789 | github.com/matthewgonzalez
+
+EXECUTIVE SUMMARY
+Results-driven Senior Full Stack Engineer with 7+ years of experience architecting and developing scalable web applications. Deep expertise in React, Node.js, TypeScript, Python, FastAPI, and AWS. Strong advocate for clean code, automated testing, and DevOps best practices.
+
+CORE TECHNICAL COMPETENCIES
+Programming Languages: JavaScript, TypeScript, Python, Java, SQL, Bash
+Frontend Stack: React, Redux, Next.js, Vue.js, Tailwind CSS, Sass, Webpack
+Backend Stack: Node.js, Express.js, FastAPI, Flask, Django, Spring Boot
+Databases: PostgreSQL, MongoDB, Redis, MySQL, Cassandra
+Cloud Infrastructure: AWS (EC2, S3, Lambda, RDS, ECS, CloudFormation), GCP, Azure
+Containerization & Orchestration: Docker, Kubernetes, Docker Compose, Helm
+CI/CD & DevOps: Jenkins, GitHub Actions, GitLab CI, Terraform, Ansible
+Testing & Quality: Jest, Pytest, Cypress, Mocha, Selenium, SonarQube
+API Design: REST, GraphQL, gRPC, WebSockets
+Development Practices: Agile, Scrum, TDD, Microservices, Event-Driven Architecture
+
+PROFESSIONAL EXPERIENCE
+
+Senior Full Stack Engineer | TechScale Systems | Phoenix, AZ | 2019 - Present
+- Architect and develop microservices platform using Node.js, FastAPI, and Docker
+- Lead team of 6 engineers in building enterprise SaaS application
+- Design and implement scalable React frontends with TypeScript and Tailwind CSS
+- Build high-performance APIs serving 5M+ requests daily
+- Optimize PostgreSQL databases and implement Redis caching strategies
+- Establish comprehensive testing framework with Jest, Pytest, and Cypress (95% coverage)
+- Create CI/CD pipelines using GitHub Actions and Jenkins
+- Deploy and manage Kubernetes clusters on AWS EKS
+- Reduce infrastructure costs by 40% through optimization
+- Mentor developers and conduct technical training sessions
+- Collaborate with product managers in Agile sprints
+
+Full Stack Software Engineer | CloudNative Tech | Tucson, AZ | 2017 - 2019
+- Developed full-stack applications using React, Redux, Node.js, and MongoDB
+- Built RESTful and GraphQL APIs with Express.js
+- Implemented real-time features using WebSockets and Redis pub/sub
+- Migrated legacy application to modern React architecture
+- Deployed containerized applications to AWS ECS
+- Improved application performance by 65% through optimization
+- Participated in on-call rotation and incident response
+
+Software Developer | WebForward | Scottsdale, AZ | 2016 - 2017
+- Created web applications with JavaScript, Python, and Express.js
+- Worked with PostgreSQL and MongoDB databases
+- Implemented authentication and authorization systems
+- Participated in Agile ceremonies and code reviews
+
+EDUCATION
+Bachelor of Science in Computer Science
+Arizona State University | 2012 - 2016
+Minor in Mathematics | Dean's List (7 semesters)
+
+PROFESSIONAL CERTIFICATIONS
+- AWS Certified Solutions Architect - Professional (2022)
+- AWS Certified Developer - Associate (2020)
+- Certified Kubernetes Administrator (CKA) (2021)
+- MongoDB Certified Developer (2019)
+
+SIGNIFICANT PROJECTS
+
+Enterprise Financial Platform | React, Node.js, PostgreSQL, Kubernetes, AWS
+- Architected financial services platform processing $100M+ transactions annually
+- Implemented microservices architecture with 20+ services
+- Built secure authentication with OAuth2 and multi-factor authentication
+- Achieved PCI DSS compliance and SOC 2 certification
+- Maintained 99.98% uptime over 2 years
+
+AI-Powered Customer Support System | React, FastAPI, TensorFlow, Redis, Docker
+- Built customer support platform with AI chatbot integration
+- Processed 500K+ support tickets monthly
+- Implemented natural language processing for ticket routing
+- Reduced average response time by 60%
+
+KEY ACHIEVEMENTS
+- Led successful cloud migration from on-premise to AWS saving $800K annually
+- Reduced deployment time by 85% through comprehensive CI/CD automation
+- Improved system reliability from 95% to 99.98% uptime
+- Mentored 10 developers, 6 promoted to senior positions
+- Presented at AWS re:Invent 2022 on microservices architecture
+
+OPEN SOURCE CONTRIBUTIONS
+- Core contributor to Express.js middleware ecosystem
+- Maintainer of React component library (8K+ GitHub stars)
+- Published 8 npm packages with 100K+ combined downloads
+- Regular contributor to FastAPI and pytest projects
+- Active technical blogger with 50K+ monthly readers

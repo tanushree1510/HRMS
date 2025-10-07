@@ -1,0 +1,50 @@
+LISA THOMPSON
+Full Stack Web Developer
+lisa.thompson@email.com | (555) 890-1234 | github.com/lisathompson
+
+PROFESSIONAL SUMMARY
+Talented Full Stack Developer with 5 years of experience building modern web applications. Strong skills in React, Node.js, TypeScript, Python, and AWS. Committed to writing clean, efficient code.
+
+CORE COMPETENCIES
+Languages: JavaScript, TypeScript, Python, HTML, CSS, SQL
+Frontend: React, Redux, Next.js, Tailwind CSS, Sass
+Backend: Node.js, Express.js, FastAPI, REST APIs
+Databases: PostgreSQL, MongoDB, Redis
+Cloud: AWS (EC2, S3, Lambda, RDS), Docker
+Testing: Jest, Pytest, Cypress, React Testing Library
+Tools: Git, GitHub, VS Code, Agile/Scrum
+
+WORK HISTORY
+
+Full Stack Developer | WebTech Solutions | Chicago, IL | 2020 - Present
+- Build web applications using React, TypeScript, and Node.js
+- Develop RESTful APIs with Express.js and FastAPI
+- Work with PostgreSQL and MongoDB databases
+- Deploy applications to AWS using Docker
+- Implement automated testing with Jest and Cypress
+- Participate in Agile sprints and code reviews
+
+Software Developer | DevStudio | Remote | 2019 - 2020
+- Developed frontend features with React and Redux
+- Created backend services with Node.js
+- Integrated third-party APIs
+- Worked in collaborative team environment
+
+Junior Developer | CodeBase | Denver, CO | 2018 - 2019
+- Built web features using JavaScript and Python
+- Learned React and Node.js
+- Contributed to team projects
+
+EDUCATION
+B.S. Computer Science | University of Illinois | 2014 - 2018
+
+PROJECTS
+Social Network App | React, Node.js, PostgreSQL, AWS
+- Full-stack social networking platform
+- Real-time messaging with WebSockets
+- Deployed on AWS with CI/CD
+
+Food Delivery App | React, FastAPI, MongoDB, Docker
+- Built food ordering and delivery platform
+- Implemented payment integration
+- Containerized with Docker

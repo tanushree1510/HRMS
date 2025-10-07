@@ -1,0 +1,68 @@
+MICHAEL CHEN
+Senior Full Stack Engineer
+michael.chen@email.com | (555) 345-6789 | Portfolio: michaelchen.dev
+
+PROFESSIONAL PROFILE
+Seasoned Software Engineer with 8 years of comprehensive experience in full-stack development. Expert in JavaScript, TypeScript, Python, React, and cloud technologies. Passionate about building high-performance, scalable applications and mentoring development teams.
+
+TECHNICAL EXPERTISE
+Languages: JavaScript, TypeScript, Python, Java, SQL
+Frontend: React, Redux, Angular, Vue.js, Tailwind CSS, SASS
+Backend: Node.js, Express.js, FastAPI, Django, Spring Boot
+Databases: PostgreSQL, MongoDB, Redis, DynamoDB
+Cloud & Infrastructure: AWS (EC2, S3, Lambda, RDS, CloudFront), Azure, Docker, Kubernetes
+CI/CD: Jenkins, GitHub Actions, GitLab CI, CircleCI
+Testing: Jest, Mocha, Pytest, Selenium, Cypress
+Methodologies: Agile, Scrum, TDD, Microservices Architecture
+
+CAREER HISTORY
+
+Lead Software Engineer | DataFlow Technologies | San Francisco, CA | 2020 - Present
+- Architect and develop microservices using Node.js, FastAPI, and Docker
+- Lead team of 8 engineers in building scalable SaaS platform
+- Implement comprehensive testing strategies with Jest, Pytest, and Cypress
+- Optimize system performance, reducing latency by 55%
+- Design and implement CI/CD pipelines using Jenkins and AWS
+- Conduct technical interviews and mentor junior engineers
+- Collaborate with stakeholders in Agile sprints
+
+Senior Software Engineer | CloudScale Inc. | Mountain View, CA | 2018 - 2020
+- Developed full-stack applications using React, TypeScript, and PostgreSQL
+- Built RESTful APIs and GraphQL services with Node.js and Express.js
+- Implemented caching strategies using Redis
+- Deployed containerized applications to AWS ECS and Kubernetes
+- Improved code quality through rigorous code reviews
+- Contributed to system design and architecture decisions
+
+Software Engineer | WebDynamics | San Jose, CA | 2016 - 2018
+- Created responsive web applications with React and Node.js
+- Worked with MongoDB and PostgreSQL databases
+- Implemented authentication systems and security best practices
+- Participated in Agile ceremonies and sprint planning
+- Integrated third-party services and APIs
+
+EDUCATION
+Master of Science in Computer Science | MIT | 2014 - 2016
+Bachelor of Science in Software Engineering | UC Berkeley | 2010 - 2014
+
+CERTIFICATIONS
+- AWS Certified Solutions Architect - Professional
+- AWS Certified Developer - Associate
+- Certified Kubernetes Administrator (CKA)
+
+NOTABLE PROJECTS
+
+Enterprise CRM Platform | React, Node.js, PostgreSQL, AWS, Kubernetes
+- Architected and built CRM system serving 100K+ users
+- Implemented real-time features using WebSockets
+- Achieved 99.9% uptime through robust infrastructure design
+
+ML-Powered Analytics Dashboard | React, Python, FastAPI, TensorFlow, Redis
+- Developed analytics platform with machine learning insights
+- Optimized for performance handling millions of data points
+- Implemented caching layer reducing query time by 70%
+
+OPEN SOURCE CONTRIBUTIONS
+- Core contributor to popular React UI library (5K+ stars)
+- Maintainer of Express.js middleware package
+- Regular contributor to FastAPI community

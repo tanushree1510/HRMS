@@ -1,0 +1,59 @@
+SARAH MITCHELL
+Full Stack Software Engineer
+sarah.mitchell@email.com | (555) 234-5678 | github.com/sarahmitchell
+
+SUMMARY
+Results-driven Full Stack Engineer with 6 years of experience building modern web applications. Proficient in React, Node.js, Python, and cloud platforms. Strong background in Agile methodologies and continuous integration practices.
+
+SKILLS
+Programming: JavaScript, TypeScript, Python, HTML, CSS
+Frontend Technologies: React, Redux, Next.js, Tailwind CSS, Material-UI
+Backend Technologies: Node.js, Express.js, FastAPI, Python
+Databases: PostgreSQL, MongoDB, MySQL
+Cloud Platforms: AWS (EC2, S3, Lambda), Google Cloud Platform
+DevOps: Docker, Kubernetes, CI/CD, GitHub Actions, Jenkins
+Testing: Jest, Pytest, Cypress, Enzyme
+Version Control: Git, GitHub, GitLab
+
+WORK EXPERIENCE
+
+Software Engineer II | TechVentures | Palo Alto, CA | 2021 - Present
+- Develop full-stack features using React, TypeScript, Node.js, and PostgreSQL
+- Design and implement RESTful APIs and microservices architecture
+- Collaborate with cross-functional teams in Agile environment
+- Conduct code reviews and mentor junior developers
+- Optimize application performance and implement caching strategies with Redis
+- Deploy applications to AWS using Docker containers and Kubernetes
+
+Full Stack Developer | InnovateNow | San Francisco, CA | 2019 - 2021
+- Built responsive web applications with React and Node.js
+- Integrated third-party APIs and services
+- Implemented automated testing with Jest and Cypress
+- Participated in system design and architecture decisions
+- Used MongoDB for data persistence
+
+Junior Developer | CodeCraft Solutions | Remote | 2018 - 2019
+- Developed web applications using JavaScript, Python, and Express.js
+- Worked with SQL databases and ORM frameworks
+- Contributed to frontend development with React
+- Participated in daily standups and sprint planning
+
+EDUCATION
+B.S. in Computer Science | Stanford University | 2014 - 2018
+
+ACHIEVEMENTS
+- Led migration of monolithic application to microservices, improving scalability
+- Reduced API response time by 45% through optimization
+- Implemented automated testing framework, increasing code coverage to 90%
+- Contributed to 3 open-source projects with 500+ stars on GitHub
+
+PROJECTS
+Task Management App | React, FastAPI, PostgreSQL, Docker
+- Full-stack task management application with real-time updates
+- Implemented authentication and role-based access control
+- Deployed on AWS with CI/CD pipeline
+
+Social Media Analytics | React, Node.js, MongoDB, AWS
+- Built analytics dashboard for social media metrics
+- Implemented data visualization using D3.js
+- Scaled to handle 50K+ concurrent users

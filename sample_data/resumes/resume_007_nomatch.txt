@@ -1,0 +1,27 @@
+ROBERT NGUYEN
+Data Analyst
+robert.nguyen@email.com | (555) 789-0123
+
+SUMMARY
+Detail-oriented Data Analyst with 4 years of experience in data analysis, visualization, and reporting. Proficient in SQL, Python, Excel, and Tableau.
+
+SKILLS
+Data Analysis: SQL, Python (pandas, numpy), R, Excel, Statistics
+Visualization: Tableau, Power BI, matplotlib, seaborn
+Tools: Jupyter Notebook, Google Analytics, JIRA
+
+EXPERIENCE
+
+Data Analyst | DataCorp | Boston, MA | 2021 - Present
+- Analyze business data and create reports for stakeholders
+- Build dashboards in Tableau for executive team
+- Perform statistical analysis and A/B testing
+- Write SQL queries to extract insights from databases
+
+Junior Data Analyst | Analytics Pro | New York, NY | 2020 - 2021
+- Created data visualizations and reports
+- Cleaned and processed data using Python
+- Collaborated with business teams
+
+EDUCATION
+Bachelor of Science in Statistics | NYU | 2016 - 2020

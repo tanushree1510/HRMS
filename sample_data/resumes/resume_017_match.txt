@@ -1,0 +1,73 @@
+ANDREW MILLER
+Software Engineer - Full Stack Development
+andrew.miller@email.com | (555) 789-3456 | github.com/andrewmiller
+
+OBJECTIVE
+Full Stack Software Engineer with 6 years of experience seeking to contribute expertise in React, Node.js, TypeScript, Python, and AWS to build innovative web applications.
+
+SKILLS SUMMARY
+Programming: JavaScript, TypeScript, Python, HTML, CSS, SQL
+Frontend: React, Redux, Next.js, Tailwind CSS, Bootstrap, jQuery
+Backend: Node.js, Express.js, FastAPI, Flask, REST APIs
+Databases: PostgreSQL, MongoDB, Redis, MySQL
+Cloud: AWS (EC2, S3, Lambda, RDS, CloudWatch), Azure
+DevOps: Docker, Kubernetes, CI/CD, GitHub Actions, Jenkins
+Testing: Jest, Pytest, Cypress, Enzyme, Supertest
+Tools: Git, npm, webpack, Babel, ESLint, Prettier
+Practices: Agile, Scrum, Code Reviews, TDD, Pair Programming
+
+WORK EXPERIENCE
+
+Software Engineer | FullStack Dev Co. | Atlanta, GA | 2020 - Present
+- Develop full-stack web applications using React, TypeScript, Node.js, and PostgreSQL
+- Build and maintain RESTful APIs with Express.js and FastAPI
+- Implement automated testing with Jest, Pytest, and Cypress
+- Deploy applications to AWS using Docker and Kubernetes
+- Optimize database queries and implement caching with Redis
+- Collaborate with cross-functional teams in Agile environment
+- Participate in code reviews and pair programming sessions
+- Mentor junior developers on best practices
+
+Full Stack Developer | WebDev Solutions | Charlotte, NC | 2018 - 2020
+- Created responsive web applications with React, Redux, and Node.js
+- Developed backend services using Express.js and MongoDB
+- Integrated payment processing with Stripe and PayPal APIs
+- Implemented user authentication and authorization with JWT
+- Deployed applications to AWS EC2 with Nginx load balancer
+- Participated in sprint planning and daily standups
+
+Junior Software Developer | CodeCrafters | Raleigh, NC | 2017 - 2018
+- Built web features using JavaScript, Python, and SQL
+- Worked with PostgreSQL database design
+- Learned React and modern JavaScript development
+- Contributed to team projects in Agile workflow
+
+EDUCATION
+Bachelor of Science in Computer Science
+Georgia Institute of Technology | 2013 - 2017
+GPA: 3.6/4.0
+
+CERTIFICATIONS
+- AWS Certified Solutions Architect - Associate
+- AWS Certified Developer - Associate
+- MongoDB Certified Developer
+
+PROJECTS
+
+Real Estate Platform | React, Node.js, PostgreSQL, AWS, Docker
+- Built property listing and search platform
+- Implemented map integration with Google Maps API
+- Deployed with Docker on AWS ECS
+- Handles 100K+ property listings
+
+Blog Platform | React, FastAPI, MongoDB, Kubernetes
+- Created blogging platform with markdown support
+- Implemented user authentication and comments
+- Deployed using Kubernetes on AWS EKS
+- Supports 50K+ monthly active users
+
+ACHIEVEMENTS
+- Improved application load time by 60% through optimization
+- Implemented CI/CD pipeline reducing deployment time by 70%
+- Reduced production bugs by 40% through comprehensive testing
+- Contributed to 5 open-source projects

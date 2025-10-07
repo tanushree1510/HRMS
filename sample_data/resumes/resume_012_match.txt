@@ -1,0 +1,73 @@
+THOMAS WRIGHT
+Full Stack Engineer
+thomas.wright@email.com | (555) 234-8901 | github.com/thomaswright
+
+OBJECTIVE
+Seeking a challenging Software Engineer position to apply 6 years of experience in full-stack development, specializing in React, Node.js, Python, and AWS cloud services.
+
+TECHNICAL PROFICIENCY
+Programming Languages: JavaScript, TypeScript, Python, SQL, Java
+Frontend Technologies: React, Redux, Next.js, Vue.js, Tailwind CSS, Bootstrap, HTML5, CSS3
+Backend Technologies: Node.js, Express.js, FastAPI, Django REST Framework
+Databases: PostgreSQL, MongoDB, Redis, MySQL, DynamoDB
+Cloud Services: AWS (EC2, S3, Lambda, RDS, CloudFront, API Gateway), Google Cloud
+DevOps Tools: Docker, Kubernetes, Jenkins, GitHub Actions, Terraform
+Testing Frameworks: Jest, Pytest, Mocha, Chai, Cypress, Selenium
+Version Control: Git, GitHub, GitLab
+Methodologies: Agile, Scrum, Kanban, TDD, CI/CD
+
+EMPLOYMENT HISTORY
+
+Software Engineer | FullStack Technologies | Seattle, WA | 2020 - Present
+- Develop and maintain full-stack applications using React, TypeScript, Node.js, and PostgreSQL
+- Build RESTful APIs and microservices with Express.js and FastAPI
+- Implement automated testing achieving 85% code coverage with Jest and Pytest
+- Deploy applications to AWS using Docker, Kubernetes, and CI/CD pipelines
+- Optimize database queries and implement Redis caching for improved performance
+- Collaborate with product managers and designers in Agile sprints
+- Conduct code reviews and mentor junior team members
+- Participate in architectural decisions and system design
+
+Full Stack Developer | WebInnovate | Portland, OR | 2018 - 2020
+- Created responsive web applications using React, Redux, and Node.js
+- Developed backend services with Express.js and MongoDB
+- Integrated third-party APIs including payment gateways and analytics
+- Implemented authentication and authorization using JWT
+- Deployed applications to AWS EC2 with load balancing
+- Participated in daily standups and sprint retrospectives
+
+Software Developer | CodeFactory | Boise, ID | 2017 - 2018
+- Built web applications using JavaScript, Python, and SQL
+- Worked with PostgreSQL database design and optimization
+- Contributed to frontend development with React
+- Learned Docker and containerization practices
+
+EDUCATION
+Bachelor of Science in Computer Science
+University of Washington | 2013 - 2017
+Relevant Coursework: Data Structures, Algorithms, Database Systems, Web Development, Cloud Computing
+
+CERTIFICATIONS
+- AWS Certified Solutions Architect - Associate
+- AWS Certified Developer - Associate
+- MongoDB Certified Developer Associate
+
+NOTABLE PROJECTS
+
+E-Commerce Platform | React, Node.js, PostgreSQL, AWS, Stripe API
+- Architected and built full-featured e-commerce platform
+- Implemented payment processing with Stripe
+- Deployed on AWS with auto-scaling and load balancing
+- Handles 50K+ monthly transactions
+
+Real-Time Chat Application | React, FastAPI, WebSockets, Redis, Docker
+- Developed real-time messaging platform
+- Implemented WebSocket connections for instant communication
+- Used Redis for message queuing and caching
+- Containerized with Docker and deployed to AWS ECS
+
+ACHIEVEMENTS
+- Improved application performance by 65% through code optimization
+- Reduced deployment time from 2 hours to 15 minutes with CI/CD automation
+- Led successful migration from monolithic to microservices architecture
+- Mentored 3 junior developers who were promoted to mid-level positions

@@ -1,0 +1,64 @@
+KEVIN JACKSON
+Senior Software Developer
+kevin.jackson@email.com | (555) 901-2345 | linkedin.com/in/kevinjackson
+
+SUMMARY
+Accomplished Software Engineer with 7 years of full-stack development experience. Expertise in JavaScript, TypeScript, Python, React, Node.js, and cloud technologies. Strong background in Agile methodologies and DevOps practices.
+
+TECHNICAL SKILLS
+Programming: JavaScript, TypeScript, Python, Java, SQL
+Frontend: React, Redux, Vue.js, Angular, Tailwind CSS, Material-UI
+Backend: Node.js, Express.js, FastAPI, Django, Spring Boot
+Databases: PostgreSQL, MongoDB, Redis, MySQL
+Cloud/DevOps: AWS (EC2, S3, Lambda, RDS), Docker, Kubernetes, Jenkins, CI/CD
+Testing: Jest, Pytest, Cypress, Mocha, Selenium
+Version Control: Git, GitHub, Bitbucket
+Methodologies: Agile, Scrum, TDD, Microservices
+
+PROFESSIONAL EXPERIENCE
+
+Senior Software Developer | CloudNative Inc. | Austin, TX | 2019 - Present
+- Architect and develop microservices using Node.js, FastAPI, and Docker
+- Build responsive UIs with React, TypeScript, and Tailwind CSS
+- Design and implement RESTful APIs and GraphQL services
+- Optimize database performance with PostgreSQL and Redis caching
+- Deploy applications to AWS using Kubernetes and CI/CD pipelines
+- Mentor team of 4 developers and conduct code reviews
+- Collaborate with product team in Agile sprints
+
+Software Engineer | TechSavvy | San Diego, CA | 2017 - 2019
+- Developed full-stack features using React, Node.js, and MongoDB
+- Implemented automated testing with Jest, Pytest, and Cypress
+- Built CI/CD pipelines using Jenkins and GitHub Actions
+- Deployed containerized apps to AWS ECS
+- Participated in system design and architecture planning
+
+Developer | StartupHub | Remote | 2016 - 2017
+- Created web applications with JavaScript, Python, and Express.js
+- Worked with SQL databases and REST APIs
+- Contributed to frontend development with React
+
+EDUCATION
+Bachelor of Science in Computer Engineering
+University of California, San Diego | 2012 - 2016
+
+CERTIFICATIONS
+- AWS Certified Solutions Architect - Associate
+- Certified Scrum Developer (CSD)
+
+KEY PROJECTS
+
+Healthcare Management System | React, Node.js, PostgreSQL, AWS, Docker
+- Built comprehensive healthcare platform for 50K+ users
+- Implemented HIPAA-compliant security measures
+- Achieved 99.95% uptime through robust infrastructure
+
+Real-Time Collaboration Tool | React, FastAPI, WebSockets, Redis
+- Developed real-time collaboration platform
+- Optimized for low latency with Redis caching
+- Scaled to support 10K concurrent connections
+
+ACHIEVEMENTS
+- Reduced deployment time by 60% through CI/CD automation
+- Improved API performance by 50% through optimization
+- Led successful migration to microservices architecture

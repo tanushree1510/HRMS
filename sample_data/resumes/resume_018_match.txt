@@ -1,0 +1,73 @@
+NICOLE CARTER
+Full Stack Web Developer
+nicole.carter@email.com | (555) 890-4567 | Portfolio: nicolecarter.com
+
+PROFILE
+Creative and detail-oriented Full Stack Developer with 5+ years building modern web applications. Proficient in React, Node.js, TypeScript, Python, and AWS cloud services. Passionate about user experience and writing efficient code.
+
+TECHNICAL SKILLS
+Languages: JavaScript, TypeScript, Python, HTML5, CSS3, SQL
+Frontend Technologies: React, Redux, Next.js, Tailwind CSS, Styled Components, Material-UI
+Backend Technologies: Node.js, Express.js, FastAPI, Django, REST APIs, GraphQL
+Databases: PostgreSQL, MongoDB, Redis, Firebase
+Cloud Platforms: AWS (EC2, S3, Lambda, RDS, Amplify), Heroku, Netlify
+DevOps: Docker, Kubernetes, GitHub Actions, Jenkins, CI/CD
+Testing: Jest, Pytest, Cypress, React Testing Library, Postman
+Tools: Git, GitHub, VS Code, Figma, Webpack, Babel
+Methodologies: Agile, Scrum, Responsive Design, Mobile-First Development
+
+PROFESSIONAL EXPERIENCE
+
+Full Stack Developer | DigitalCrafters | Miami, FL | 2020 - Present
+- Design and develop full-stack applications using React, TypeScript, and Node.js
+- Build RESTful and GraphQL APIs with Express.js and FastAPI
+- Work with PostgreSQL and MongoDB for data persistence
+- Implement Redis caching for performance optimization
+- Deploy applications to AWS using Docker containers
+- Write automated tests with Jest, Pytest, and Cypress
+- Collaborate with designers to implement pixel-perfect UIs
+- Participate in Agile sprints and code reviews
+- Mentor junior team members
+
+Web Developer | CreativeWeb | Fort Lauderdale, FL | 2019 - 2020
+- Developed responsive websites using React, Redux, and Tailwind CSS
+- Created backend APIs with Node.js and Express.js
+- Integrated third-party services including Stripe and SendGrid
+- Implemented authentication with JWT and OAuth
+- Deployed applications to AWS and Heroku
+
+Junior Developer | WebStartup | Tampa, FL | 2018 - 2019
+- Built web features using JavaScript, Python, and HTML/CSS
+- Learned React and Node.js development
+- Worked with PostgreSQL databases
+- Contributed to team projects
+
+EDUCATION
+Bachelor of Science in Computer Science
+Florida International University | 2014 - 2018
+Summa Cum Laude, GPA: 3.9/4.0
+
+PROJECTS
+
+Travel Booking Platform | React, Node.js, PostgreSQL, Stripe API, AWS
+- Built full-featured travel booking website
+- Implemented payment processing with Stripe
+- Integrated booking APIs from multiple providers
+- Deployed on AWS with auto-scaling
+- Serves 30K+ monthly users
+
+Fitness Tracking App | React Native, FastAPI, MongoDB, Docker
+- Developed mobile app for tracking workouts and nutrition
+- Built backend API with FastAPI and MongoDB
+- Implemented data visualization with Chart.js
+- Containerized with Docker and deployed to AWS
+
+CERTIFICATIONS
+- AWS Certified Developer - Associate (2022)
+- React Developer Certification (2021)
+
+ACHIEVEMENTS
+- Won "Best Web App" at DevFest Hackathon 2022
+- Contributed to open-source React component library
+- Optimized application reducing load time by 55%
+- Increased test coverage from 60% to 92%
