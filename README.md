@@ -31,34 +31,7 @@ A complete, production-ready HRMS built with FastAPI, Streamlit, and SQLite. Fea
 - **ML/AI**: scikit-learn, TF-IDF, PyPDF2, python-docx
 - **Deployment**: Local Mac (no Docker required)
 
-## Project Structure
 
-```
-hrms_project/
-├── backend/
-│   ├── main.py              # FastAPI application
-│   ├── database.py          # Database configuration
-│   ├── models.py            # SQLAlchemy models
-│   ├── schemas.py           # Pydantic schemas
-│   ├── auth.py              # JWT authentication
-│   └── seed_data.py         # Database seeding script
-├── frontend/
-│   └── app.py               # Streamlit application
-├── ml_models/
-│   ├── resume_screening.py  # Resume screening AI
-│   ├── performance_prediction.py  # Performance prediction AI
-│   ├── chatbot.py           # HR chatbot
-│   └── performance_model.pkl     # Trained model (generated)
-├── db/
-│   └── hrms.db              # SQLite database (generated)
-├── uploads/
-│   └── resumes/             # Uploaded resumes storage
-├── sample_data/
-│   ├── job_description.txt  # Sample JD
-│   └── resumes/             # 20 sample resumes
-├── requirements.txt         # Python dependencies
-└── README.md               # This file
-```
 
 ## Installation & Setup
 
