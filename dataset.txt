@@ -1,0 +1,14 @@
+Name,Department,Salary,Hire_Date,KPI_Score,Attendance_Percentage,Performance_Score
+John Doe,Engineering,95000.0,2021-06-01,92,95,93
+Jane Smith,Engineering,92000.0,2021-07-15,85,88,86
+Michael Brown,Sales,78000.0,2022-01-20,78,82,80
+Emily Davis,Marketing,72000.0,2022-03-05,60,90,75
+David Wilson,Engineering,98000.0,2021-09-12,95,92,94
+Sarah Johnson,Finance,88000.0,2022-02-18,82,85,84
+Robert Taylor,Sales,75000.0,2022-05-08,70,78,74
+Lisa Anderson,Marketing,70000.0,2022-06-22,72,88,80
+James Martinez,Engineering,96000.0,2021-11-03,88,90,89
+Patricia Garcia,HR,68000.0,2022-08-15,75,83,79
+Christopher Lee,Finance,82000.0,2022-04-10,84,86,85
+Jennifer White,Sales,76000.0,2022-07-28,76,81,78
+Daniel Harris,Engineering,94000.0,2022-09-05,90,87,89
