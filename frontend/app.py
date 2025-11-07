@@ -1,10 +1,20 @@
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+print("DEBUG: Added path ->", os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 import streamlit as st
 import requests
 import pandas as pd
+import numpy as np
 from datetime import datetime, date
-import os
-import sys
-
+from ml_models.performance_prediction import (
+    train_performance_model,
+    save_model,
+    load_model,
+    prepare_features,
+    predict_performance
+)
+print("DEBUG: OS after import =", os)
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 API_BASE_URL = "http://localhost:8000"
@@ -89,7 +99,7 @@ def admin_dashboard():
     # -------- Employees Tab --------
     with tab2:
         st.header("Employee Management")
-        col1, col2 = st.columns([2, 1])
+        col1, col2, col3, col4 = st.columns([2, 1, 1, 1])
         with col1:
             st.subheader("Employee List")
             try:
@@ -136,22 +146,90 @@ def admin_dashboard():
                             st.error(f"Error: {response.json().get('detail', 'Unknown error')}")
                     except Exception as e:
                         st.error(f"Error adding employee: {str(e)}")
+        
+        # ------------------ Column 3: Delete Employee ------------------
+        with col3:
+            st.subheader("Delete Employee")
+            try:
+                response = requests.get(f"{API_BASE_URL}/employees", headers=get_headers())
+                if response.status_code == 200:
+                    employees = response.json()
+                    if employees:
+                        employee_options = {f"{emp['id']} - {emp['name']}": emp['id'] for emp in employees}
+                        selected = st.selectbox("Select Employee to Delete", options=list(employee_options.keys()))
+
+                        if st.button("Delete Employee"):
+                            emp_id = employee_options[selected]
+                            try:
+                                del_resp = requests.delete(f"{API_BASE_URL}/employees/{emp_id}", headers=get_headers())
+                                if del_resp.status_code == 200:
+                                    st.success("Employee deleted successfully!")
+                                    st.rerun()
+                                else:
+                                    st.error(f"Error: {del_resp.json().get('detail')}")
+                            except Exception as e:
+                                st.error(f"Failed to delete: {str(e)}")
+            except Exception as e:
+                st.error(f"Error loading employees for deletion: {str(e)}")
+
+        # ------------------ Column 4: Update Employee ------------------
+        with col4:
+            st.subheader("Update Employee")
+            try:
+                # Fetch employee list
+                response = requests.get(f"{API_BASE_URL}/employees", headers=get_headers())
+                if response.status_code == 200:
+                    employees = response.json()
+                    if employees:
+                        # Dropdown to select employee
+                        employee_options = {f"{emp['id']} - {emp['name']}": emp for emp in employees}
+                        selected = st.selectbox("Select Employee to Update", options=list(employee_options.keys()))
+                        emp_data = employee_options[selected]
+
+                        departments_list = ["Engineering", "HR", "Sales", "Marketing", "Finance", "Management"]
+                        roles_list = ["Employee", "HR", "Admin"]
+
+                        with st.form("update_employee_form"):
+                            # Pre-fill the form with existing employee data
+                            name = st.text_input("Name", value=emp_data["name"])
+                            email = st.text_input("Email", value=emp_data["email"])
+                            department = st.selectbox("Department", departments_list, index=departments_list.index(emp_data["department"]))
+                            salary = st.number_input("Salary", min_value=0.0, step=1000.0, value=emp_data["salary"])
+                            hire_date = st.date_input("Hire Date", value=pd.to_datetime(emp_data["hire_date"]))
+                            role = st.selectbox("Role", roles_list, index=roles_list.index(emp_data["role"]))
+                            password = st.text_input("New Password (optional)", type="password")
+
+                            if st.form_submit_button("Update Employee"):
+                                try:
+                                    update_resp = requests.put(
+                                        f"{API_BASE_URL}/employees/{emp_data['id']}",
+                                        headers=get_headers(),
+                                        json={
+                                            "name": name,
+                                            "email": email,
+                                            "department": department,
+                                            "salary": salary,
+                                            "hire_date": hire_date.isoformat(),
+                                            "role": role,
+                                            "password": password
+                                        }
+                                    )
+                                    if update_resp.status_code == 200:
+                                        st.success("Employee updated successfully!")
+                                        st.rerun()
+                                    else:
+                                        st.error(f"Error: {update_resp.json().get('detail', 'Unknown error')}")
+                                except Exception as e:
+                                    st.error(f"Failed to update employee: {str(e)}")
+            except Exception as e:
+                st.error(f"Error loading employees for update: {str(e)}")
 
     # -------- Attendance Tab --------
     with tab3:
         st.header("Attendance Management")
-        col1, col2 = st.columns([2, 1])
-        with col1:
-            st.subheader("Attendance Records")
-            try:
-                response = requests.get(f"{API_BASE_URL}/attendance", headers=get_headers())
-                if response.status_code == 200:
-                    attendance = response.json()
-                    if attendance:
-                        df = pd.DataFrame(attendance)
-                        st.dataframe(df, use_container_width=True)
-            except Exception as e:
-                st.error(f"Error loading attendance: {str(e)}")
+        col1, col2, col3 = st.columns([2, 1, 1])
+
+        # -------- Mark Attendance (right column) --------
         with col2:
             st.subheader("Mark Attendance")
             with st.form("mark_attendance_form"):
@@ -160,7 +238,7 @@ def admin_dashboard():
                     employees = response.json()
                     employee_options = {f"{emp['name']} ({emp['id']})": emp['id'] for emp in employees}
 
-                    selected_employee = st.selectbox("Employee", list(employee_options.keys()))
+                    selected_employee_for_mark = st.selectbox("Employee", list(employee_options.keys()))
                     attendance_date = st.date_input("Date", value=date.today())
                     status = st.selectbox("Status", ["Present", "Absent", "Leave", "Half Day"])
                     hours = st.number_input("Hours Worked", min_value=0.0, max_value=12.0, value=8.0, step=0.5)
@@ -171,7 +249,7 @@ def admin_dashboard():
                                 f"{API_BASE_URL}/attendance",
                                 headers=get_headers(),
                                 json={
-                                    "employee_id": employee_options[selected_employee],
+                                    "employee_id": employee_options[selected_employee_for_mark],
                                     "date": attendance_date.isoformat(),
                                     "status": status,
                                     "hours_worked": hours
@@ -185,21 +263,115 @@ def admin_dashboard():
                         except Exception as e:
                             st.error(f"Error: {str(e)}")
 
+        # -------- Attendance Records (left column) --------
+        with col1:
+            st.subheader("Attendance Records")
+            try:
+                # Fetch employee list for filtering
+                response = requests.get(f"{API_BASE_URL}/employees", headers=get_headers())
+                if response.status_code == 200:
+                    employees = response.json()
+                    if employees:
+                        employee_options = {f"{emp['name']} ({emp['id']})": emp['id'] for emp in employees}
+                        selected_employee = st.selectbox("Select Employee to View Attendance", list(employee_options.keys()))
+
+                        # Fetch attendance for the selected employee
+                        emp_id = employee_options[selected_employee]
+                        att_resp = requests.get(f"{API_BASE_URL}/attendance?employee_id={emp_id}", headers=get_headers())
+                        if att_resp.status_code == 200:
+                            attendance = att_resp.json()
+                            if attendance:
+                                df = pd.DataFrame(attendance)
+                                # Optional: drop unnecessary columns
+                                df = df[["date", "status", "hours_worked"]]
+                                df = df.sort_values("date")
+                                st.dataframe(df, use_container_width=True)
+                            else:
+                                st.info("No attendance records found for this employee.")
+            except Exception as e:
+                st.error(f"Error loading attendance: {str(e)}")
+
+        # -------- Update Attendance (new column 3) --------
+        with col3:
+            st.subheader("Update Attendance")
+
+            # Load employee list
+            try:
+                emp_response = requests.get(f"{API_BASE_URL}/employees", headers=get_headers())
+                if emp_response.status_code == 200:
+                    employees = emp_response.json()
+                    employee_map = {f"{e['name']} ({e['id']})": e['id'] for e in employees}
+
+                    selected_emp_update = st.selectbox("Select Employee", list(employee_map.keys()))
+                    emp_id_update = employee_map[selected_emp_update]
+
+                    # Fetch attendance for that employee
+                    att_resp = requests.get(
+                        f"{API_BASE_URL}/attendance?employee_id={emp_id_update}",
+                        headers=get_headers()
+                    )
+
+                    if att_resp.status_code == 200:
+                        records = att_resp.json()
+                        if records:
+                            # Convert records to DataFrame
+                            df_update = pd.DataFrame(records)
+
+                            # Convert date to readable form
+                            df_update['date'] = pd.to_datetime(df_update['date']).dt.date
+
+                            # Select which attendance to update
+                            selected_record = st.selectbox(
+                                "Select a record to update",
+                                df_update['date'].astype(str)
+                            )
+
+                            # Get that row
+                            row = df_update[df_update['date'].astype(str) == selected_record].iloc[0]
+
+                            # Update fields
+                            new_status = st.selectbox(
+                                "Status",
+                                ["Present", "Absent", "Leave", "Half Day"],
+                                index=["Present","Absent","Leave","Half Day"].index(row["status"])
+                            )
+
+                            new_hours = st.number_input(
+                                "Hours Worked",
+                                min_value=0.0,
+                                max_value=12.0,
+                                value=float(row["hours_worked"]),
+                                step=0.5
+                            )
+
+                            if st.button("Update Attendance"):
+                                update_resp = requests.put(
+                                    f"{API_BASE_URL}/attendance/{row['id']}",
+                                    json={
+                                        "status": new_status,
+                                        "hours_worked": new_hours
+                                    },
+                                    headers=get_headers()
+                                )
+
+                                if update_resp.status_code == 200:
+                                    st.success("✅ Attendance updated successfully!")
+                                    st.rerun()
+                                else:
+                                    st.error("❌ Failed to update attendance")
+
+                        else:
+                            st.info("No attendance records found.")
+            except Exception as e:
+                st.error(f"Error updating attendance: {str(e)}")
+
+
     # -------- Performance Tab --------
     with tab4:
         st.header("Performance Management")
-        col1, col2 = st.columns([2, 1])
-        with col1:
-            st.subheader("Performance Records")
-            try:
-                response = requests.get(f"{API_BASE_URL}/performance", headers=get_headers())
-                if response.status_code == 200:
-                    performance = response.json()
-                    if performance:
-                        df = pd.DataFrame(performance)
-                        st.dataframe(df, use_container_width=True)
-            except Exception as e:
-                st.error(f"Error loading performance: {str(e)}")
+        col1, col2, col3 = st.columns([2, 1, 1])
+
+        # -------- Add Performance Record (right column) --------
         with col2:
             st.subheader("Add Performance Record")
             with st.form("add_performance_form"):
@@ -208,8 +380,8 @@ def admin_dashboard():
                     employees = response.json()
                     employee_options = {f"{emp['name']} ({emp['id']})": emp['id'] for emp in employees}
 
-                    selected_employee = st.selectbox("Employee", list(employee_options.keys()))
-                    month = st.text_input("Month (e.g., 2024-01)")
+                    selected_employee_for_add = st.selectbox("Employee", list(employee_options.keys()))
+                    month = st.text_input("Month (e.g., 2025-09)")
                     kpi_score = st.slider("KPI Score", 0.0, 10.0, 5.0, 0.1)
                     attendance_pct = st.slider("Attendance %", 0.0, 100.0, 90.0, 1.0)
 
@@ -219,7 +391,7 @@ def admin_dashboard():
                                 f"{API_BASE_URL}/performance",
                                 headers=get_headers(),
                                 json={
-                                    "employee_id": employee_options[selected_employee],
+                                    "employee_id": employee_options[selected_employee_for_add],
                                     "month": month,
                                     "kpi_score": kpi_score,
                                     "attendance_percentage": attendance_pct
@@ -229,9 +401,86 @@ def admin_dashboard():
                                 st.success("Performance record added!")
                                 st.rerun()
                             else:
-                                st.error("Error adding record")
+                                st.error(f"Error: {response.json().get('detail', 'Unknown error')}")
                         except Exception as e:
-                            st.error(f"Error: {str(e)}")
+                            st.error(f"Error adding record: {str(e)}")
+
+        # -------- Performance Records (left column) --------
+        with col1:
+            st.subheader("Performance Records")
+            try:
+                # Fetch employee list for filtering
+                response = requests.get(f"{API_BASE_URL}/employees", headers=get_headers())
+                if response.status_code == 200:
+                    employees = response.json()
+                    if employees:
+                        employee_options = {f"{emp['name']} ({emp['id']})": emp['id'] for emp in employees}
+                        selected_employee = st.selectbox("Select Employee to View Performance", list(employee_options.keys()))
+
+                        # Fetch performance records for the selected employee
+                        emp_id = employee_options[selected_employee]
+                        perf_resp = requests.get(f"{API_BASE_URL}/performance?employee_id={emp_id}", headers=get_headers())
+                        if perf_resp.status_code == 200:
+                            performance = perf_resp.json()
+                            if performance:
+                                df = pd.DataFrame(performance)
+                                df = df[["month", "kpi_score", "attendance_percentage"]]
+                                df = df.sort_values("month")
+                                st.dataframe(df, use_container_width=True)
+                            else:
+                                st.info("No performance records found for this employee.")
+            except Exception as e:
+                st.error(f"Error loading performance: {str(e)}")
+
+        # -------- Update Performance Record (Column 3) --------
+        with col3:
+            st.subheader("Update Performance Record")
+            try:
+                # Fetch employees
+                response = requests.get(f"{API_BASE_URL}/employees", headers=get_headers())
+                if response.status_code == 200:
+                    employees = response.json()
+                    employee_options = {f"{emp['name']} ({emp['id']})": emp['id'] for emp in employees}
+                    selected_employee_for_update = st.selectbox("Select Employee", list(employee_options.keys()), key="update_perf_employee")
+
+                    # Fetch employee performance records
+                    emp_id = employee_options[selected_employee_for_update]
+                    perf_resp = requests.get(f"{API_BASE_URL}/performance?employee_id={emp_id}", headers=get_headers())
+                    if perf_resp.status_code == 200:
+                        performance = perf_resp.json()
+                        if performance:
+                            # Choose which record to update
+                            record_options = {f"{rec['month']}": rec for rec in performance}
+                            selected_record_key = st.selectbox("Select Month to Update", list(record_options.keys()))
+                            rec_data = record_options[selected_record_key]
+
+                            with st.form("update_performance_form"):
+                                kpi_score = st.slider("KPI Score", 0.0, 10.0, value=rec_data["kpi_score"], step=0.1)
+                                attendance_pct = st.slider("Attendance %", 0.0, 100.0, value=rec_data["attendance_percentage"], step=1.0)
+
+                                if st.form_submit_button("Update Record"):
+                                    try:
+                                        update_resp = requests.put(
+                                            f"{API_BASE_URL}/performance/{rec_data['id']}",
+                                            headers=get_headers(),
+                                            json={
+                                                "month": rec_data["month"],
+                                                "kpi_score": kpi_score,
+                                                "attendance_percentage": attendance_pct
+                                            }
+                                        )
+                                        if update_resp.status_code == 200:
+                                            st.success("Performance record updated successfully!")
+                                            st.rerun()
+                                        else:
+                                            st.error(f"Error: {update_resp.json().get('detail', 'Unknown error')}")
+                                    except Exception as e:
+                                        st.error(f"Failed to update record: {str(e)}")
+                        else:
+                            st.info("No records to update for this employee.")
+            except Exception as e:
+                st.error(f"Error loading performance for update: {str(e)}")
+
 
     # -------- AI Features Tab --------
     with tab5:
@@ -254,17 +503,38 @@ def hr_dashboard():
                     st.dataframe(df, use_container_width=True)
         except Exception as e:
             st.error(f"Error loading employees: {str(e)}")
+            
     with tab2:
         st.header("Attendance Records")
         try:
             response = requests.get(f"{API_BASE_URL}/attendance", headers=get_headers())
+        
             if response.status_code == 200:
                 attendance = response.json()
-                if attendance:
+
+                if attendance and isinstance(attendance, list):
                     df = pd.DataFrame(attendance)
-                    st.dataframe(df, use_container_width=True)
+
+                    # Convert date column safely
+                    if "date" in df.columns:
+                        df["date"] = pd.to_datetime(df["date"]).dt.date
+
+                        # Sort by date desc
+                        df = df.sort_values(by="date", ascending=False)
+
+                        st.dataframe(df, use_container_width=True)
+                    else:
+                        st.info("No attendance records found.")
+
+                else:
+                    st.error("Failed to fetch attendance.")
+
+            else:
+                st.error(f"Error: {response.status_code} - {response.text}")
+
         except Exception as e:
             st.error(f"Error loading attendance: {str(e)}")
+
     with tab3:
         st.header("Performance Records")
         try:
@@ -405,54 +675,68 @@ def ai_features_page():
                 except Exception as e:
                     st.error(f"Error screening resumes: {str(e)}")
 
-    # Performance Prediction Tab
+    # ---------------- PERFORMANCE PREDICTION TAB ----------------
     with ai_tab2:
         st.subheader("Performance Prediction")
-        st.write("Train and predict employee performance based on KPI scores and attendance")
-        if st.button("Train Model"):
-            with st.spinner("Training performance prediction model..."):
-                try:
-                    import sys, numpy as np
-                    sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-                    from ml_models.performance_prediction import train_performance_model, save_model
+        st.write("Predict employee performance based on KPI score and attendance")
 
-                    response = requests.get(f"{API_BASE_URL}/performance", headers=get_headers())
-                    if response.status_code == 200:
-                        performance_data = response.json()
-                        if len(performance_data) < 10:
-                            st.warning("Need at least 10 performance records to train the model")
-                        else:
-                            X = np.array([[p["kpi_score"], p["attendance_percentage"]] for p in performance_data])
-                            y = np.array([p["kpi_score"] * (p["attendance_percentage"] / 100) for p in performance_data])
-                            model, metrics = train_performance_model(X, y)
-                            save_model(model)
-                            st.success("Model trained successfully!")
-                            st.write(f"R² Score: {metrics['r2_score']:.4f}")
-                            st.write(f"Mean Squared Error: {metrics['mse']:.4f}")
-                except Exception as e:
-                    st.error(f"Error training model: {str(e)}")
+        # Fetch all employees
+        response_emp = requests.get(f"{API_BASE_URL}/employees", headers=get_headers())
+        response_perf = requests.get(f"{API_BASE_URL}/performance", headers=get_headers())
 
-        st.markdown("---")
-        st.write("**Predict Performance**")
-        col1, col2 = st.columns(2)
-        with col1:
-            kpi_score = st.slider("KPI Score", 0.0, 10.0, 7.0, 0.1)
-        with col2:
-            attendance_pct = st.slider("Attendance %", 0.0, 100.0, 85.0, 1.0)
-        if st.button("Predict"):
+        if response_emp.status_code != 200 or response_perf.status_code != 200:
+            st.error("Could not load employee or performance data.")
+            st.stop()
+
+            employees = response_emp.json()
+            performance_records = response_perf.json()
+
+            if not employees:
+                st.warning("No employees found.")
+                st.stop()
+
+            # ---- Employee selection ----
+            employee_map = {emp["name"]: emp["id"] for emp in employees}
+            selected_name = st.selectbox("Select Employee", list(employee_map.keys()))
+            selected_id = employee_map[selected_name]
+
+            # ---- Get performance entry for selected employee ----
+            perf = next((p for p in performance_records if p["employee_id"] == selected_id), None)
+
+            if not perf:
+                st.warning("No performance record found for this employee.")
+                st.stop()
+
+            # Auto-fill KPI + Attendance
+            kpi_score = perf["kpi_score"]
+            attendance_pct = perf["attendance_percentage"]
+
+            st.write(f"**KPI Score:** {kpi_score}")
+            st.write(f"**Attendance %:** {attendance_pct}")
+
+            # ---- Predict + Save Button ----
+            if st.button("Predict Performance Score"):
+                # Simple rule-based model
+                predicted_score = round((0.7 * kpi_score * 10) + (0.3 * attendance_pct), 2)
+
+            st.success(f"✅ Predicted Performance Score: {predicted_score}")
+
+            # ✅ Save predicted score to backend
             try:
-                import sys
-                sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-                from ml_models.performance_prediction import load_model, predict_performance, prepare_features
-                model = load_model()
-                if model is None:
-                    st.warning("Please train the model first")
+                update_response = requests.put(
+                    f"{API_BASE_URL}/performance/{perf['id']}",
+                    headers=get_headers(),
+                    json={"predicted_score": predicted_score}
+                )
+
+                if update_response.status_code == 200:
+                    st.success("✅ Predicted score saved successfully!")
+                    st.rerun()  # auto refresh UI
                 else:
-                    features = prepare_features(kpi_score, attendance_pct)
-                    prediction = predict_performance(model, features)
-                    st.success(f"Predicted Performance Score: {prediction:.2f}")
+                    st.error("❌ Could not save predicted score to database.")
+
             except Exception as e:
-                st.error(f"Error making prediction: {str(e)}")
+                st.error(f"Error updating performance record: {str(e)}")
 
     # HR Chatbot Tab
     with ai_tab3:

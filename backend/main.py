@@ -1,8 +1,21 @@
+import sys, os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT_DIR = os.path.abspath(os.path.join(BASE_DIR, ".."))
+
+if ROOT_DIR not in sys.path:
+    sys.path.append(ROOT_DIR)
+
+from ml_models.performance_prediction import (
+    train_performance_model,
+    save_model,
+    load_model,
+    predict_performance,
+    prepare_features
+)
 from fastapi import FastAPI, Depends, HTTPException, status, UploadFile, File, Form
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from typing import List
-import os
 from datetime import datetime, date
 
 from database import engine, get_db, Base
